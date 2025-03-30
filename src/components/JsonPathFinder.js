@@ -161,14 +161,18 @@ const JsonPathFinder = () => {
             </Typography>
             <Box>
               <Tooltip title="Copy to Clipboard">
-                <IconButton onClick={handleCopy} size="small" disabled={!result}>
-                  <ContentCopyIcon fontSize="small" />
-                </IconButton>
+                <span>
+                  <IconButton onClick={handleCopy} size="small" disabled={!result}>
+                    <ContentCopyIcon fontSize="small" />
+                  </IconButton>
+                </span>
               </Tooltip>
               <Tooltip title="Clear All">
-                <IconButton onClick={handleClear} size="small" disabled={!jsonInput && !jsonPath && !result}>
-                  <DeleteIcon fontSize="small" />
-                </IconButton>
+                <span>
+                  <IconButton onClick={handleClear} size="small" disabled={!jsonInput && !jsonPath && !result}>
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
+                </span>
               </Tooltip>
             </Box>
           </Box>
